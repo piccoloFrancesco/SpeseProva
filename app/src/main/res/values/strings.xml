@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpeseProva</string>
+    <string name="textImporto">Importo</string>
+    <string name="buttonSalva">Salva</string>
+</resources>
