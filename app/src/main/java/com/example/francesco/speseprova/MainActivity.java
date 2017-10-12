@@ -26,9 +26,13 @@ public class MainActivity extends AppCompatActivity {
         EditText importo = (EditText) findViewById(R.id.textImporto);
         TextView textView  = (TextView) findViewById(R.id.textView);
         textView.setText(importo.getText());
+
         /*TO DO: salvare il valore da qualche parte
         in un file?
         su un db?kkk
          */
+        //(cristian) quando si salva il valore,il box torna come all'inizio
+        EditText new_importo = (EditText) findViewById(R.id.textImporto);
+        new_importo.setText("importo");
     }//saveValue
 }//MainActivity
