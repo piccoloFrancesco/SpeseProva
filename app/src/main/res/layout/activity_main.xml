@@ -15,7 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:inputType="numberDecimal"
         android:onClick="empty"
@@ -33,8 +33,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintHorizontal_bias="0.52" />/>
+        android:layout_marginTop="36dp"
+        app:layout_constraintHorizontal_bias="0.537" />/>
     <EditText
         android:id="@+id/textType"
         android:layout_width="114dp"
@@ -43,8 +43,8 @@
         android:inputType="text"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="11dp" />
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="-6dp" />
         />
 
 
@@ -71,4 +71,11 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSalva" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="-1dp" />
 </android.support.constraint.ConstraintLayout>
