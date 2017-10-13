@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/textImporto"
-        android:layout_width="114dp"
+        android:layout_width="100dp"
         android:layout_height="52dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
@@ -18,33 +18,40 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:onClick="empty"
+        android:onClick="emptyImporto"
         android:text="@string/textImporto"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/textData"
-        android:layout_width="114dp"
+        android:layout_width="110dp"
         android:layout_height="52dp"
-        android:text="data"
-        android:inputType="date"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintHorizontal_bias="0.52" />/>
+        android:inputType="text"
+        android:onClick="emptyData"
+        android:text="data"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintLeft_toRightOf="@+id/textImporto"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />/>
+
     <EditText
         android:id="@+id/textType"
         android:layout_width="114dp"
         android:layout_height="52dp"
-        android:text="descrizione"
-        android:inputType="text"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="11dp"
         android:layout_marginTop="16dp"
-        android:layout_marginRight="11dp" />
+        android:inputType="text"
+        android:onClick="emptyImporto"
+        android:text="descrizione"
+        app:layout_constraintLeft_toRightOf="@+id/textData"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
         />
 
 
@@ -71,4 +78,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSalva" />
+
+    <Button
+        android:id="@+id/buttonVisualizza"
+        android:layout_width="118dp"
+        android:layout_height="69dp"
+        android:text="Visualizza spese"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSalva"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView" />
 </android.support.constraint.ConstraintLayout>
