@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
     /**Svuota la textbox*/
     public void emptyData (View view){
-        EditText importo = (EditText) findViewById(R.id.textImporto);
-        importo.setText("");
+        EditText data = (EditText) findViewById(R.id.textData);
+        data.setText("");
     }//emptyData
 
     /**Svuota la textbox*/
     public void emptyDescrizione (View view){
-        EditText importo = (EditText) findViewById(R.id.textImporto);
-        importo.setText("");
+        EditText descrizione = (EditText) findViewById(R.id.textType);
+        descrizione.setText("");
     }//emptyDescrizione
 
     /**Messaggio che visualizza a schermo l'importo */
@@ -39,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         EditText data = (EditText) findViewById(R.id.textData);
         EditText desc = (EditText) findViewById(R.id.textType);
         TextView textView  = (TextView) findViewById(R.id.textView);
+        String toSave =(importo.getText()+"|"+data.getText()+"|"+desc.getText());
         //Debug per vedere se ha preso correttamente i dati
-        textView.setText("importo: "+importo.getText()+"\ndata: "+data.getText()+"\ndecrizione: "+desc.getText());
-
+        textView.setText("importo/data/descrizione"+"\n"+toSave);
         //TO DO: salvare il valore su un file
-
+        String filename = "listaScontrini";
         //(cristian) quando si salva il valore,il box torna come all'inizio
         EditText new_importo = (EditText) findViewById(R.id.textImporto);
         new_importo.setText("importo");

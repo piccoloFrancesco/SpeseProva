@@ -47,7 +47,7 @@
         android:layout_marginRight="11dp"
         android:layout_marginTop="16dp"
         android:inputType="text"
-        android:onClick="emptyImporto"
+        android:onClick="emptyDescrizione"
         android:text="descrizione"
         app:layout_constraintLeft_toRightOf="@+id/textData"
         app:layout_constraintRight_toRightOf="parent"
