@@ -1,6 +1,7 @@
 package com.example.francesco.speseprova;
 
 import android.content.Intent;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -47,8 +48,34 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("importo/data/descrizione"+"\n"+toSave);
         //TO DO: salvare il valore su un file
         String filename = "listaScontrini";
+
         //(cristian) quando si salva il valore,il box torna come all'inizio
         EditText new_importo = (EditText) findViewById(R.id.textImporto);
         new_importo.setText("importo");
     }//saveValue
+
+    public boolean isExternalStorageWritable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state)) {
+            return true;
+        }//if
+        return false;
+    }//isExternalStorageWritable
+
+    public boolean isExternalStorageReadable() {
+        String state = Environment.getExternalStorageState();
+        if (Environment.MEDIA_MOUNTED.equals(state) ||
+                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+            return true;
+        }//if
+        return false;
+    }//isExternalStorageReadable
+
+    /**Metodo di debug per la lettura del file*/
+    public void readValueDEBUG (View view){
+        String filename = "listaScontrini";
+        //TO DO: lettura del file ed inserimento nella textview
+        TextView debug = (TextView) findViewById(R.id.textView);
+        debug.setText(" ");
+    }//readValueDEBUG
 }//MainActivity
