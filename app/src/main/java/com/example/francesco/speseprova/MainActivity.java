@@ -33,18 +33,6 @@ public class MainActivity extends AppCompatActivity {
         importo.setText("");
     }//emptyImporto
 
-    /**Svuota la textbox*/
-    public void emptyData (View view){
-        EditText data = (EditText) findViewById(R.id.textData);
-        data.setText("");
-    }//emptyData
-
-    /**Svuota la textbox*/
-    public void emptyDescrizione (View view){
-        EditText descrizione = (EditText) findViewById(R.id.textType);
-        descrizione.setText("");
-    }//emptyDescrizione
-
     /**Messaggio che visualizza a schermo l'importo */
     public void saveValue (View view){
         EditText importo = (EditText) findViewById(R.id.textImporto);
@@ -53,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView  = (TextView) findViewById(R.id.textView);
         String toSave =(importo.getText()+"|"+data.getText()+"|"+desc.getText());
         //Debug per vedere se ha preso correttamente i dati
-        textView.setText("importo/data/descrizione"+"\n"+toSave);
-        //TO DO: salvare il valore su un file
+        //textView.setText("importo/data/descrizione"+"\n"+toSave);
         String filename = "listaScontrini";
         writeToFile(filename,toSave,getApplicationContext());
         //(cristian) quando si salva il valore,il box torna come all'inizio
@@ -95,30 +82,13 @@ public class MainActivity extends AppCompatActivity {
             Log.e("login activity", "Can not read file: " + e.toString());
         }//catch
         return ret;
-    }//redFromFile
+    }//readFromFile
 
-    public boolean isExternalStorageWritable() {
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state)) {
-            return true;
-        }//if
-        return false;
-    }//isExternalStorageWritable
-
-    public boolean isExternalStorageReadable() {
-        String state = Environment.getExternalStorageState();
-        if (Environment.MEDIA_MOUNTED.equals(state) ||
-                Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
-            return true;
-        }//if
-        return false;
-    }//isExternalStorageReadable
-
-    /**Metodo di debug per la lettura del file*/
+    /**Metodo per la lettura del file*/
     public void readValueDEBUG (View view){
         String filename = "listaScontrini";
-        //TO DO: lettura del file ed inserimento nella textview
+        String toPrint = readFromFile(getApplicationContext(),filename).replace("|","  ")+"\n";
         TextView debug = (TextView) findViewById(R.id.textView);
-        debug.setText("Debug\n"+readFromFile(getApplicationContext(),filename));
+        debug.setText(toPrint);
     }//readValueDEBUG
 }//MainActivity
