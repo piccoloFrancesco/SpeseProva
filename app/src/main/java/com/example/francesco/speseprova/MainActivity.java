@@ -40,11 +40,10 @@ public class MainActivity extends AppCompatActivity {
         EditText data = (EditText) findViewById(R.id.textData);
         EditText desc = (EditText) findViewById(R.id.textType);
         TextView textView  = (TextView) findViewById(R.id.textView);
-        String toSave =(importo.getText()+" | "+data.getText()+" | "+desc.getText()+"\n");
+        String toSave =(importo.getText()+" | "+data.getText()+" | "+desc.getText()+"+");
         //Debug per vedere se ha preso correttamente i dati
         //textView.setText("importo/data/descrizione"+"\n"+toSave);
         String filename = "listaScontrini";
-        //writeToFile(filename,toSave,getApplicationContext());
         writeToFile(filename,toSave,getApplicationContext());
         //(cristian) quando si salva il valore,il box torna come all'inizio
         EditText new_importo = (EditText) findViewById(R.id.textImporto);
@@ -90,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         File path = context.getFilesDir();
         File file = new File(path, filename);
         try {
-            FileOutputStream stream = new FileOutputStream(file);
+            FileOutputStream stream = new FileOutputStream(file,true);
             stream.write(data.getBytes());
             stream.close();
         } catch(java.io.IOException e){
@@ -112,15 +111,14 @@ public class MainActivity extends AppCompatActivity {
             //gestione eccezione
             ris=e.getMessage();
         }//catch
-        ris += context.getFilesDir().toString()+"/"+filename+"\n"+new String(bytes);
+        ris += ""+new String(bytes);
         return ris;
     }//readFromFileAlt
 
     /**Metodo per la lettura del file*/
     public void readValueDEBUG (View view){
-        String filename = "listaScontrini";
-        //String toPrint = readFromFile(getApplicationContext(),filename).replace("|","  ")+"\n";
-        String toPrint = readFromFile(filename,getApplicationContext()).replace("|","  ")+"\n";
+        String filename = "listaScontrini";;
+        String toPrint = readFromFile(filename,getApplicationContext()).replace("|","  ").replace("+","\n");
         TextView debug = (TextView) findViewById(R.id.textView);
         debug.setText(toPrint);
     }//readValueDEBUG
