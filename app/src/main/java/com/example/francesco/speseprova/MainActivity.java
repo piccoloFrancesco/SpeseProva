@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         EditText data = (EditText) findViewById(R.id.textData);
         EditText desc = (EditText) findViewById(R.id.textType);
         TextView textView  = (TextView) findViewById(R.id.textView);
-        String toSave =(importo.getText()+"|"+data.getText()+"|"+desc.getText());
+        String toSave =(importo.getText()+" | "+data.getText()+" | "+desc.getText()+"+");
         //Debug per vedere se ha preso correttamente i dati
         //textView.setText("importo/data/descrizione"+"\n"+toSave);
         String filename = "listaScontrini";
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         new_importo.setText("importo");
     }//saveValue
 
-    private void writeToFile(String filename,String data,Context context) {
+    private void writeToFileOLD(String filename,String data,Context context) {
         try {
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(filename, Context.MODE_APPEND));
             outputStreamWriter.write("\n"+data);
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         }//catch
     }//writeToFile
 
-    private String readFromFile(Context context,String filename) {
+    private String readFromFileOLD(Context context,String filename) {
         String ret = "";
         try {
             InputStream inputStream = context.openFileInput(filename);
@@ -84,10 +85,40 @@ public class MainActivity extends AppCompatActivity {
         return ret;
     }//readFromFile
 
+    private void writeToFile(String filename,String data,Context context) {
+        File path = context.getFilesDir();
+        File file = new File(path, filename);
+        try {
+            FileOutputStream stream = new FileOutputStream(file,true);
+            stream.write(data.getBytes());
+            stream.close();
+        } catch(java.io.IOException e){
+            //gestione
+        }//catch
+    }//writeToFileAlt
+
+    private String readFromFile(String filename,Context context){
+        String ris="";
+        File path = context.getFilesDir();
+        File file = new File(path, filename);
+        int length = (int) file.length();
+        byte[] bytes = new byte[length];
+        try {
+            FileInputStream in = new FileInputStream(file);
+            in.read(bytes);
+            in.close();
+        } catch (java.io.IOException e){
+            //gestione eccezione
+            ris=e.getMessage();
+        }//catch
+        ris += ""+new String(bytes);
+        return ris;
+    }//readFromFileAlt
+
     /**Metodo per la lettura del file*/
     public void readValueDEBUG (View view){
-        String filename = "listaScontrini";
-        String toPrint = readFromFile(getApplicationContext(),filename).replace("|","  ")+"\n";
+        String filename = "listaScontrini";;
+        String toPrint = readFromFile(filename,getApplicationContext()).replace("|","  ").replace("+","\n");
         TextView debug = (TextView) findViewById(R.id.textView);
         debug.setText(toPrint);
     }//readValueDEBUG
