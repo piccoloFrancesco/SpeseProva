@@ -32,7 +32,17 @@ public class MainActivity extends AppCompatActivity {
     public void emptyImporto (View view){
         EditText importo = (EditText) findViewById(R.id.textImporto);
         importo.setText("");
+      
+        //(cristian) svuoto anche gli altri contenitori
     }//emptyImporto
+    public void emptyData (View view){
+        EditText data = (EditText) findViewById(R.id.textData);
+        data.setText("");
+    }
+    public void emptyDescription (View view){
+        EditText descrizione = (EditText) findViewById(R.id.textType);
+        descrizione.setText("");
+    }//emptyDescription
 
     /**Messaggio che visualizza a schermo l'importo */
     public void saveValue (View view){
@@ -45,9 +55,17 @@ public class MainActivity extends AppCompatActivity {
         //textView.setText("importo/data/descrizione"+"\n"+toSave);
         String filename = "listaScontrini";
         writeToFile(filename,toSave,getApplicationContext());
+
+        //(cristian) quando si salva il valore,il box torna come all'inizio(edit: risulta più apprezzabile che il box torni vuoto)
         //(cristian) quando si salva il valore,il box torna come all'inizio
+
         EditText new_importo = (EditText) findViewById(R.id.textImporto);
-        new_importo.setText("importo");
+        new_importo.setText(null);
+        EditText new_data = (EditText) findViewById(R.id.textData);
+        new_data.setText(null);
+        EditText new_description = (EditText) findViewById(R.id.textType);
+        new_description.setText(null);
+
     }//saveValue
 
     private void writeToFileOLD(String filename,String data,Context context) {
