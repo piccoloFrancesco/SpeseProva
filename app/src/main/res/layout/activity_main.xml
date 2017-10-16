@@ -89,7 +89,7 @@
         android:layout_height="69dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:onClick="readValueDEBUG"
+        android:onClick="readValue"
         android:text="Visualizza spese"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintLeft_toLeftOf="parent"
