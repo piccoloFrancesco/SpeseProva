@@ -17,46 +17,64 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String filename = "listaScontrini";
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setMovementMethod(new ScrollingMovementMethod());
+        String fileStringa = readFromFile(filename, getApplicationContext());
+        if(fileStringa.equals("IOException")){
+            fileStringa="";
+        }//if
+        textView.setText(fileStringa);
     }//onCreate
 
-    /**Svuota la textbox*/
+    /**Svuota la textbox importo
+     * Autore: Cristian Lazzarin
+     * @param view */
     public void emptyImporto (View view){
         EditText importo = (EditText) findViewById(R.id.textImporto);
-        importo.setText("");
+        importo.setText(null);
     }//emptyImporto
 
-    //(cristian) svuoto anche gli altri contenitori
+    /**Svuota la textbox importo
+     * Autore: Cristian Lazzarin
+     * @param view */
     public void emptyData (View view){
         EditText data = (EditText) findViewById(R.id.textData);
-        data.setText("");
+        data.setText(null);
     }//emptyData
 
+    /**Svuota la textbox importo
+     * Autore: Cristian Lazzarin
+     * @param view */
     public void emptyDescription (View view){
         EditText descrizione = (EditText) findViewById(R.id.textType);
-        descrizione.setText("");
+        descrizione.setText(null);
     }//emptyDescription
 
-    /**Messaggio che scrive su file il valore e cancella quello presente nelle caselle di test */
+    /**Salva i dati delle textbox nel file
+     * Autori: Francesco Piccolo, Cristian Lazzarin, Nicola Dal Maso
+     * @param view */
     public void saveValue (View view){
         EditText importo = (EditText) findViewById(R.id.textImporto);
         EditText data = (EditText) findViewById(R.id.textData);
         EditText desc = (EditText) findViewById(R.id.textType);
-        String toSave =(importo.getText()+" | "+data.getText()+" | "+desc.getText()+"+");
+        String toSave =(importo.getText()+"€   "+data.getText()+"   "
+                +desc.getText()+"\n");
         String filename = "listaScontrini";
         writeToFile(filename,toSave,getApplicationContext());
-        //(cristian) quando si salva il valore,il box torna come all'inizio(edit: risulta più apprezzabile che il box torni vuoto)
-        EditText new_importo = (EditText) findViewById(R.id.textImporto);
-        new_importo.setText(null);
-        EditText new_data = (EditText) findViewById(R.id.textData);
-        new_data.setText(null);
-        EditText new_description = (EditText) findViewById(R.id.textType);
-        new_description.setText(null);
+        emptyImporto(view);
+        emptyData(view);
+        emptyDescription(view);
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText(readFromFile(filename, getApplicationContext()));
     }//saveValue
 
-    /**Messaggio che scrive su file una stringa*/
+    /**Scrive su file la stringa data
+     * Autore: Francesco Piccolo
+     * @param filename il nome del file
+     * @param data la stringa da scrivere sul file
+     * @param context */
     private void writeToFile(String filename,String data,Context context) {
         File path = context.getFilesDir();
         File file = new File(path, filename);
@@ -67,9 +85,12 @@ public class MainActivity extends AppCompatActivity {
         } catch(java.io.IOException e){
             Log.e("IOException",e.toString());
         }//catch
-    }//writeToFileAlt
+    }//writeToFile
 
-    /** metodo che legge da file*/
+    /**legge da file la stringa data
+     * Autore: Francesco Piccolo
+     * @param filename il nome del file
+     * @param context */
     private String readFromFile(String filename,Context context){
         String ris="";
         File path = context.getFilesDir();
@@ -82,17 +103,10 @@ public class MainActivity extends AppCompatActivity {
             in.close();
         } catch (java.io.IOException e){
             Log.e("IOException",e.toString());
-            ris=e.getMessage();
+            ris="IOException";
         }//catch
         ris += ""+new String(bytes);
         return ris;
-    }//readFromFileAlt
+    }//readFromFile
 
-    /**Metodo che stampa a schermo il contenuto del file*/
-    public void readValue (View view){
-        String filename = "listaScontrini";;
-        String toPrint = readFromFile(filename,getApplicationContext()).replace("|","  ").replace("+","\n");
-        TextView debug = (TextView) findViewById(R.id.textView);
-        debug.setText(toPrint);
-    }//readValueDEBUG
 }//MainActivity
