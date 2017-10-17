@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d6d9c8f-22ec-4c30-99ad-0327c84dd262" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java" />
     </list>
     <ignored path="SpeseProva.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -2312,7 +2311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508265928262</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Codice ripulito, scritto javadoc e cancellata casella superflua nell'UI">
+      <created>1508269911610</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508269911610</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
