@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             stream.write(data.getBytes());
             stream.close();
         } catch(java.io.IOException e){
-            //TO DO: gestione eccezione
+            Log.e("IOException",e.toString());
         }//catch
     }//writeToFileAlt
 
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             in.read(bytes);
             in.close();
         } catch (java.io.IOException e){
-            //TO DO: gestione eccezione
+            Log.e("IOException",e.toString());
             ris=e.getMessage();
         }//catch
         ris += ""+new String(bytes);
