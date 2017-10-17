@@ -9,7 +9,6 @@
     <list default="true" id="7d6d9c8f-22ec-4c30-99ad-0327c84dd262" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
     </list>
     <ignored path="SpeseProva.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +47,9 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+            <state relative-caret-position="492">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -60,7 +57,6 @@
                 <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
                 <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -72,14 +68,14 @@
       </file>
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="803">
+            <state relative-caret-position="884">
               <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
               <folding />
             </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -1955,6 +1951,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1966,9 +1963,8 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2309,7 +2305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508262324556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Codice ripulito, scritto javadoc e cancellata casella superflua nell'UI">
+      <created>1508265928262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508265928262</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2323,9 +2326,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8523454" sideWeight="0.49565217" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2335,14 +2337,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8523454" sideWeight="0.5043478" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8523454" sideWeight="0.49565217" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2359,22 +2362,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="textView ora è scrollabile" />
-    <option name="LAST_COMMIT_MESSAGE" value="textView ora è scrollabile" />
+    <MESSAGE value="Codice ripulito, scritto javadoc e cancellata casella superflua nell'UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codice ripulito, scritto javadoc e cancellata casella superflua nell'UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="96" column="10" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2382,7 +2384,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2392,14 +2393,45 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="96" column="10" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="10" />
+          <folding>
+            <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#emptyData#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#readFromFile#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
@@ -2407,8 +2439,6 @@
         <state relative-caret-position="340">
           <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2416,7 +2446,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2426,23 +2455,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2450,7 +2477,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2460,23 +2486,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2484,7 +2508,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2494,23 +2517,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2518,7 +2539,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2532,8 +2552,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2541,7 +2559,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2551,23 +2568,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2575,7 +2590,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2597,8 +2611,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2606,7 +2618,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2628,8 +2639,6 @@
         <state relative-caret-position="731">
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2637,7 +2646,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2647,14 +2655,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
@@ -2662,8 +2670,6 @@
         <state relative-caret-position="731">
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2671,7 +2677,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />
@@ -2681,34 +2686,32 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/francesco/speseprova/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="93" column="64" selection-start-line="93" selection-start-column="64" selection-end-line="93" selection-end-column="64" />
+        <state relative-caret-position="492">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyImporto#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#emptyData#0;class#MainActivity#0" expanded="false" />
@@ -2716,7 +2719,6 @@
             <element signature="docComment;method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="method#emptyDescription#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#saveValue#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#saveValue#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="method#writeToFile#0;class#MainActivity#0" expanded="false" />
             <element signature="docComment;method#readFromFile#0;class#MainActivity#0" expanded="false" />

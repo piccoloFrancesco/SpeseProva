@@ -13,18 +13,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 public class MainActivity extends AppCompatActivity {
-
+    private String filename = "listaScontrini";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String filename = "listaScontrini";
         setContentView(R.layout.activity_main);
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setMovementMethod(new ScrollingMovementMethod());
         String fileStringa = readFromFile(filename, getApplicationContext());
-        if(fileStringa.equals("IOException")){
-            fileStringa="";
-        }//if
         textView.setText(fileStringa);
     }//onCreate
 
@@ -61,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
         EditText desc = (EditText) findViewById(R.id.textType);
         String toSave =(importo.getText()+"€   "+data.getText()+"   "
                 +desc.getText()+"\n");
-        String filename = "listaScontrini";
         writeToFile(filename,toSave,getApplicationContext());
         emptyImporto(view);
         emptyData(view);
@@ -103,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
             in.close();
         } catch (java.io.IOException e){
             Log.e("IOException",e.toString());
-            ris="IOException";
         }//catch
         ris += ""+new String(bytes);
         return ris;
