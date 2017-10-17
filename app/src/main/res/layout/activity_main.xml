@@ -11,45 +11,46 @@
         android:id="@+id/textImporto"
         android:layout_width="100dp"
         android:layout_height="52dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
+        android:hint="Importo"
         android:inputType="numberDecimal"
         android:onClick="emptyImporto"
-        android:text="@string/textImporto"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textData"
+        android:layout_marginLeft="8dp" />
 
     <EditText
         android:id="@+id/textData"
-        android:onClick="emptyData"
-        android:layout_width="110dp"
+        android:layout_width="196dp"
         android:layout_height="52dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:hint="Data"
         android:inputType="text"
-        android:text="data"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintLeft_toRightOf="@+id/textImporto"
-        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="emptyData"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />/>
 
     <EditText
         android:id="@+id/textType"
-        android:onClick="emptyDescription"
-        android:layout_width="114dp"
+        android:layout_width="0dp"
         android:layout_height="52dp"
+        android:layout_marginEnd="11dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="11dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:hint="Descrizione"
         android:inputType="text"
-        android:text="descrizione"
-        app:layout_constraintLeft_toRightOf="@+id/textData"
+        android:onClick="emptyDescription"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
         />
@@ -57,14 +58,15 @@
 
     <Button
         android:id="@+id/buttonSalva"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="23dp"
         android:onClick="saveValue"
         android:text="@string/buttonSalva"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textImporto" />
+        app:layout_constraintTop_toBottomOf="@+id/textImporto"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/textView"
@@ -80,7 +82,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSalva"
         app:layout_constraintVertical_bias="0.833"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="250dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
 
 </android.support.constraint.ConstraintLayout>
