@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (java.io.IOException e){
             Log.e("IOException",e.toString());
         }//catch
-        ris += ""+new String(bytes);
+        ris +=new String(bytes);
         return ris;
     }//readFromFile
 
