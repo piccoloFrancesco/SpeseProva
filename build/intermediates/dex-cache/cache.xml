@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/nicoladalmaso/Desktop/Università/SpeseProva/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="S:\Users\Francesco\AndroidStudioProjects\SpeseProva\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/nicoladalmaso/Desktop/Università/SpeseProva/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_e4511ff4967d8795fe07a10e1f7ac03d76538f29/classes.dex" />
+        <dex dex="S:\Users\Francesco\AndroidStudioProjects\SpeseProva\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0031019ec45a8bb9dbd3a14e469c67b3d4d172f8\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nicoladalmaso/Desktop/Università/SpeseProva/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="S:\Users\Francesco\AndroidStudioProjects\SpeseProva\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="49a10a40c1ace4288616494c1e26a908ab0400a8">
-        <dex dex="/Users/nicoladalmaso/Desktop/Università/SpeseProva/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_66bff302d33017d641b32a83199ad75c3a9b06ad/classes.dex" />
+        sha1="1b4e83c3bf870b530516dfcc7680f2b1f146f85c">
+        <dex dex="S:\Users\Francesco\AndroidStudioProjects\SpeseProva\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_79b5799805088dabb64da61de2a5b6b955b13e5a\classes.dex" />
     </item>
 
 </items>
