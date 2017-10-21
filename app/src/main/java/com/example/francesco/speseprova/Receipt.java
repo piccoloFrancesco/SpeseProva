@@ -11,18 +11,22 @@ import java.util.StringTokenizer;
 
 public class Receipt {
     private int id;
-    private double importo;
-    private String data; //SQLite non supporta il formato Date
-    private String descrizione;
+    private double value;
+    private String date; //SQLite non supporta il formato Date
+    private String description;
     //private Bitmap foto;
     public Receipt(){    }//DB
     public Receipt(int id, double importo, String data, String desc ){
         this.id=id;
-        this.importo=importo;
-        this.data=data;
-        this.descrizione=desc;
+        this.value=importo;
+        this.date=data;
+        this.description=desc;
     }//DB
-
+    public Receipt(double importo, String data, String desc ){
+        this.value=importo;
+        this.date=data;
+        this.description=desc;
+    }//DB
     /**Metodo accessorio della classe scontrini
      * @return l'id
      */
@@ -31,17 +35,17 @@ public class Receipt {
     /**Metodo accessorio della classe scontrini
      * @return l'importo
      */
-    public double getImporto(){ return importo;};
+    public double getValue(){ return value;};
 
     /**Metodo accessorio della classe scontrini
      * @return òa data
      */
-    public String getDate(){ return data;};
+    public String getDate(){ return date;};
 
     /**Metodo accessorio della classe scontrini
      * @return la descrizione
      */
-    public String getDesc(){ return descrizione;};
+    public String getDesc(){ return description;};
 
     /** Metodo Acessorio della classe Receipt
      * @param id il nuovo identificatore
@@ -54,21 +58,21 @@ public class Receipt {
      * @param importo il nuovo importo
      */
     public void setImport (double importo){
-        this.importo=importo;
+        this.value=importo;
     }//setImport
 
     /** Metodo Acessorio della classe Receipt
      * @param data la nuova data
      */
     public void setDate (String data){
-        this.data=data;
+        this.date=data;
     }//SetDate
 
     /** Metodo Acessorio della classe Receipt
      * @param descrizione la nuova descrizione
      */
     public void setDesc (String descrizione){
-        this.descrizione=descrizione;
+        this.description=descrizione;
     }//detDesc
 
 
